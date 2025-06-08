@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichiers VIP - Muzan Tech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #00bcd4;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .file-list {
+            padding: 20px;
+            text-align: center;
+        }
+        .file-item {
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: #1abc9c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Muzan Tech - Fichiers VIP</h1>
+    </div>
+
+    <div class="file-list">
+        <div class="file-item">
+            <h3>Bot WhatsApp - VIP Version 1</h3>
+            <button onclick="window.location.href='https://www.mediafire.com/file/example_vip1.zip/file'" class="btn">Télécharger</button>
+        </div>
+        <div class="file-item">
+            <h3>Bot WhatsApp - VIP Version 2</h3>
+            <button onclick="window.location.href='https://www.mediafire.com/file/example_vip2.zip/file'" class="btn">Télécharger</button>
+        </div>
+    </div>
+
+    <h3>Accédez à la section VIP</h3>
+    <p>Pour accéder à ces fichiers, veuillez effectuer un paiement sécurisé :</p>
+
+    <!-- PayPal Payment -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="VOTRE_ID_PAYPAL">
+        <button type="submit" class="btn">Payer via PayPal</button>
+    </form>
+
+    <!-- Binance Payment -->
+    <form action="https://www.binance.com" method="post">
+        <label for="binance-payment">Payer via Binance :</label>
+        <input type="text" id="binance-payment" placeholder="ID Binance: 105519450" disabled>
+        <button type="submit" class="btn">Payer via Binance</button>
+    </form>
+
+    <!-- Orange Money Payment (For Cameroon) -->
+    <form action="orange-money-payment-link" method="post">
+        <label for="orange-money">Payer via Orange Money (Cameroun) :</label>
+        <input type="text" id="orange-money" placeholder="+237694210071 Clarisse" disabled>
+        <button type="submit" class="btn">Payer via Orange Money</button>
+    </form>
+
+    <div class="footer">
+        <p>&copy; 2025 Muzan Tech - Tous droits réservés</p>
+    </div>
+</body>
+</html>
